@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "File Upload";
+}
+
+<script src="~/Scripts/external/jquery-1.11.0.min.js"></script>
+<script src="~/Scripts/external/knockout-3.1.0.js"></script>
+
+<h2 data-bind="text: title"></h2>
+<hr />
+
+@using (Html.BeginForm("Upload", "File", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" data-bind="event:{ change: onFilesSelected }" multiple />
+    <button type="button" data-bind="click: start">Start Upload</button>
+}
+
+<div>
+    <table>
+        <tbody data-bind="foreach: selectedFiles">
+            <tr>
+                <td><p data-bind="text: file.name"></p></td>
+                <td><strong data-bind="fileSize: file.size"></strong></td>
+                <td><progress data-bind="value: uploadPersentage" max="100" style="width: 100px"></progress></td>
+                <td><img data-bind="visible: uploadResultIcon(), attr: { src: uploadResultIcon, alt: uploadStatus, title: uploadStatus }" /></td>
+                <td><button data-bind="click: startUpload">Start</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3 id="status"></h3>
+
+<script src="~/Scripts/internal/main.js"></script>
