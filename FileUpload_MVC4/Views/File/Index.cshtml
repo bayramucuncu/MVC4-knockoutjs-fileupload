@@ -22,7 +22,7 @@
                 <td><strong data-bind="fileSize: file.size"></strong></td>
                 <td><progress data-bind="value: uploadPersentage" max="100" style="width: 100px"></progress></td>
                 <td><img data-bind="visible: uploadResultIcon(), attr: { src: uploadResultIcon, alt: uploadStatus, title: uploadStatus }" /></td>
-                <td><button data-bind="click: startUpload">Start</button></td>
+                <td><button data-bind="click: startUpload, enable: !isBusy()">Start</button></td>
             </tr>
         </tbody>
     </table>

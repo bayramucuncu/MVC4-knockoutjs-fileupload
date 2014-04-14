@@ -60,3 +60,34 @@ H:\Visual Studio 2012\Projects\MVC\FileUpload_MVC4\FileUpload_MVC4\bin\System.We
 H:\Visual Studio 2012\Projects\MVC\FileUpload_MVC4\FileUpload_MVC4\obj\Debug\FileUpload_MVC4.csprojResolveAssemblyReference.cache
 H:\Visual Studio 2012\Projects\MVC\FileUpload_MVC4\FileUpload_MVC4\obj\Debug\FileUpload_MVC4.dll
 H:\Visual Studio 2012\Projects\MVC\FileUpload_MVC4\FileUpload_MVC4\obj\Debug\FileUpload_MVC4.pdb
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\FileUpload_MVC4.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\FileUpload_MVC4.pdb
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\Microsoft.Web.Infrastructure.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\Newtonsoft.Json.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Net.Http.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Net.Http.Formatting.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Net.Http.WebRequest.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.Helpers.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.Http.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.Http.WebHost.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.Mvc.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.Razor.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.WebPages.Deployment.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.WebPages.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.WebPages.Razor.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\Newtonsoft.Json.xml
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Net.Http.xml
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Net.Http.Formatting.xml
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Net.Http.WebRequest.xml
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.Helpers.xml
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.Http.xml
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.Http.WebHost.xml
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.Mvc.xml
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.Razor.xml
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.WebPages.xml
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.WebPages.Deployment.xml
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\bin\System.Web.WebPages.Razor.xml
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\obj\Debug\FileUpload_MVC4.csprojResolveAssemblyReference.cache
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\obj\Debug\FileUpload_MVC4.dll
+H:\Github\FileUpload_MVC4\FileUpload_MVC4\obj\Debug\FileUpload_MVC4.pdb

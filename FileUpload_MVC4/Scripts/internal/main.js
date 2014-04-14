@@ -20,26 +20,20 @@ var FileViewModel = function (file) {
     this.uploadStatus = ko.observable();
     this.uploadPersentage = ko.observable();
     this.uploadResultIcon = ko.observable();
+    this.isBusy = ko.observable(false);
 
     this.ajax = new XMLHttpRequest();
     this.ajax.upload.addEventListener("progress", $.proxy(this.onProgressChanged, this), false);
     this.ajax.addEventListener("load", $.proxy(this.onFileUploadSuccess,this), false);
     this.ajax.addEventListener("error", $.proxy(this.onFileUploadFailed,this), false);
     this.ajax.addEventListener("abort", $.proxy(this.onFileUploadAbort,this), false);
-
-    this.startUpload = function () {
-        var formData = new window.FormData();
-        formData.append(this.file.name, this.file);
-
-        this.ajax.open("POST", "/File/Upload");
-        this.ajax.send(formData);
-    };
 };
 
 FileViewModel.prototype.startUpload = function () {
     var formData = new window.FormData();
     formData.append(this.file.name, this.file);
-    
+
+    this.isBusy(true);
     this.ajax.open("POST", "/File/Upload");
     this.ajax.send(formData);
 };
@@ -50,18 +44,21 @@ FileViewModel.prototype.onProgressChanged = function (e) {
 };
 
 FileViewModel.prototype.onFileUploadSuccess = function (e) {
+    this.isBusy(false);
     this.uploadStatus("File successfully uploaded!");
     this.uploadPersentage(Math.round(0));
     this.uploadResultIcon("https://cdn1.iconfinder.com/data/icons/icojoy/noshadow/standart/gif/24x24/001_06.gif");
 };
 
 FileViewModel.prototype.onFileUploadFailed = function (e) {
+    this.isBusy(false);
     this.uploadStatus("File upload failed!");
     this.uploadResultIcon("https://cdn1.iconfinder.com/data/icons/icojoy/shadow/standart/png/24x24/001_05.png");
     console.error(e);
 };
 
 FileViewModel.prototype.onFileUploadAbort = function (e) {
+    this.isBusy(false);
     this.uploadStatus("File upload aborted!");
     this.uploadResultIcon("https://cdn1.iconfinder.com/data/icons/icojoy/shadow/standart/png/24x24/001_05.png");
     console.error(e);
