@@ -23,6 +23,7 @@ var FileViewModel = function (file) {
     this.isBusy = ko.observable(false);
 
     this.ajax = new XMLHttpRequest();
+
     this.ajax.upload.addEventListener("progress", $.proxy(this.onProgressChanged, this), false);
     this.ajax.addEventListener("load", $.proxy(this.onFileUploadSuccess,this), false);
     this.ajax.addEventListener("error", $.proxy(this.onFileUploadFailed,this), false);
@@ -30,10 +31,12 @@ var FileViewModel = function (file) {
 };
 
 FileViewModel.prototype.startUpload = function () {
+    this.isBusy(true);
+
     var formData = new window.FormData();
     formData.append(this.file.name, this.file);
 
-    this.isBusy(true);
+
     this.ajax.open("POST", "/File/Upload");
     this.ajax.send(formData);
 };

@@ -1,1 +1,5 @@
-2014/04/14-11:34:14.106 688 Delete type=3 #1
+2014/04/14-17:22:05.580 7cc Recovering log #6
+2014/04/14-17:22:05.580 7cc Level-0 table #8: started
+2014/04/14-17:22:05.614 7cc Level-0 table #8: 8792 bytes OK
+2014/04/14-17:22:05.648 7cc Delete type=0 #6
+2014/04/14-17:22:05.648 7cc Delete type=3 #4

@@ -9,6 +9,7 @@ namespace FileUpload_MVC4.Controllers
             return View();
         }
 
+        [HttpPost]
         public JsonResult Upload()
         {
             return Json(new { message = "file upload is OK." }, JsonRequestBehavior.AllowGet);
